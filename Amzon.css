@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar{
+    height: 60px;
+   background-color: #0f1111fa;
+   color: white;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.logo {
+    height: 70px;
+    width: 110px;
+}
+
+.fa-solid.fa-location-dot {
+    font-size: 14px; 
+    margin-left: 1px; 
+    font-family: Arial, sans-serif;
+    position: relative; 
+}
+
+.location-country {
+    display: block;
+    margin-top: 2px; 
+    font-size: 17px;
+    position: absolute; 
+    top: 12px; 
+    left: 0; 
+    width: 100%; 
+    text-align: center; 
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 600px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-dropdown {
+    height: 100%;
+    width: 80px;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    padding: 0 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-button {
+    height: 100%;
+    width: 50px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button i {
+    font-size: 18px;
+    color: black;
+}
+
+.language {
+    gap: 5px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.language-dropdown {
+    background: #0f1111fa;
+    color: white;
+}
+
+.account-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.hello-signin {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.account-button,
+.orders-button,
+.cart-button {
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+    border: none; 
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.account-button:hover,
+.orders-button:hover,
+.cart-button:hover {
+    background-color: #febd69;
+    color: black;
+    border-color: #febd69;
+}
+
+.under-navbar{
+    height:40px;
+    background-color: #232f3e;
+    color: white;
+}
+.under-navbar-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+}
+.under-navbar-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section{
+    background-image: url("hero_image.jpg");
+    height: 600px;
+    background-size: cover;
+    height: 350px;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e6e7;
+    align-items: flex-end;
+    background-size: cover;
+}
+
+
+.box{
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+box-content {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box-content p{
+    color: #007185
+}
+
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    margin-top: 10px;
+}
+
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd
+}

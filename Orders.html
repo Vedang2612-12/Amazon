@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders - Amazon</title>
+    <link rel="stylesheet" href="Amzon.css">
+    <style>
+        body {
+            background-color: #eaeded;
+        }
+        .orders-container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 30px 30px 10px 30px;
+        }
+        .orders-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #111;
+        }
+        .order-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #fafafa;
+            display: flex;
+            gap: 20px;
+        }
+        .order-image {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border: 1px solid #eee;
+            background: #fff;
+            border-radius: 4px;
+        }
+        .order-details {
+            flex: 1;
+        }
+        .order-info {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        .order-product-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #222;
+            margin-bottom: 6px;
+        }
+        .order-status {
+            color: #007600;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .order-actions {
+            margin-top: 10px;
+        }
+        .order-actions button {
+            background: #ffd814;
+            border: 1px solid #fcd200;
+            border-radius: 3px;
+            padding: 7px 18px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .order-actions button:hover {
+            background: #f7ca00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- ...existing code for navbar (reuse from Amazon.html if needed)... -->
+    </header>
+    <div class="orders-container">
+        <div class="orders-title">Your Orders</div>
+        <!-- Example Order 1 -->
+        <div class="order-card">
+            <img src="https://m.media-amazon.com/images/I/71KilybDOoL._AC_SY355_.jpg" alt="Product" class="order-image">
+            <div class="order-details">
+                <div class="order-info">Order placed: <b>March 10, 2024</b></div>
+                <div class="order-info">Order # 123-4567890-1234567</div>
+                <div class="order-info">Total: ₹1,499.00</div>
+                <div class="order-status">Delivered Mar 13, 2024</div>
+                <div class="order-product-title">Echo Dot (4th Gen, Blue) with Alexa</div>
+                <div class="order-actions">
+                    <button>Buy it again</button>
+                    <button>View your item</button>
+                </div>
+            </div>
+        </div>
+        <!-- Example Order 2 -->
+        <div class="order-card">
+            <img src="https://m.media-amazon.com/images/I/81drfTT9ZfL._AC_SY355_.jpg" alt="Product" class="order-image">
+            <div class="order-details">
+                <div class="order-info">Order placed: <b>January 22, 2024</b></div>
+                <div class="order-info">Order # 123-9876543-7654321</div>
+                <div class="order-info">Total: ₹599.00</div>
+                <div class="order-status">Delivered Jan 25, 2024</div>
+                <div class="order-product-title">The Psychology of Money</div>
+                <div class="order-actions">
+                    <button>Buy it again</button>
+                    <button>View your item</button>
+                </div>
+            </div>
+        </div>
+        <!-- Example Order 3 -->
+        <div class="order-card">
+            <img src="https://m.media-amazon.com/images/I/61LtuGzXeaL._AC_SY355_.jpg" alt="Product" class="order-image">
+            <div class="order-details">
+                <div class="order-info">Order placed: <b>December 5, 2023</b></div>
+                <div class="order-info">Order # 123-1122334-5566778</div>
+                <div class="order-info">Total: ₹2,299.00</div>
+                <div class="order-status">Delivered Dec 8, 2023</div>
+                <div class="order-product-title">boAt Rockerz 450 Bluetooth Headphones</div>
+                <div class="order-actions">
+                    <button>Buy it again</button>
+                    <button>View your item</button>
+                </div>
+            </div>
+        </div>
+        <div class="order-card">
+            <img src="https://m.media-amazon.com/images/I/71U3b6l3pYL._AC_SY355_.jpg" alt="Product" class="order-image">
+            <div class="order-details">
+                <div class="order-info">Order placed: <b>November 15, 2023</b></div>
+                <div class="order-info">Order # 123-2233445-6677889</div>
+                <div class="order-info">Total: ₹899.00</div>
+                <div class="order-status">Delivered Nov 18, 2023</div>
+                <div class="order-product-title">Mi Smart Band 6</div>
+                <div class="order-actions">
+                    <button>Buy it again</button>
+                    <button>View your item</button>
+                </div>
+            </div>
+        </div>
+        <div class="order-card">
+            <img src="https://m.media-amazon.com/images/I/81p+Ek6FQ-L._AC_SY355_.jpg" alt="Product" class="order-image">
+            <div class="order-details">
+                <div class="order-info">Order placed: <b>October 2, 2023</b></div>
+                <div class="order-info">Order # 123-3344556-7788990</div>
+                <div class="order-info">Total: ₹1,199.00</div>
+                <div class="order-status">Delivered Oct 5, 2023</div>
+                <div class="order-product-title">Philips 9-Watt LED Bulb, Pack of 4</div>
+                <div class="order-actions">
+                    <button>Buy it again</button>
+                    <button>View your item</button>
+                </div>
+            </div>
+        </div>
+        <div class="order-card">
+            <img src="https://m.media-amazon.com/images/I/61Mblg0vQGL._AC_SY355_.jpg" alt="Product" class="order-image">
+            <div class="order-details">
+                <div class="order-info">Order placed: <b>September 12, 2023</b></div>
+                <div class="order-info">Order # 123-4455667-8899001</div>
+                <div class="order-info">Total: ₹499.00</div>
+                <div class="order-status">Delivered Sep 15, 2023</div>
+                <div class="order-product-title">Cello Water Bottle 1L, Set of 2</div>
+                <div class="order-actions">
+                    <button>Buy it again</button>
+                    <button>View your item</button>
+                </div>
+            </div>
+        </div>
+        <div class="order-card">
+            <img src="https://m.media-amazon.com/images/I/81Zt42ioCgL._AC_SY355_.jpg" alt="Product" class="order-image">
+            <div class="order-details">
+                <div class="order-info">Order placed: <b>August 20, 2023</b></div>
+                <div class="order-info">Order # 123-5566778-9900112</div>
+                <div class="order-info">Total: ₹2,999.00</div>
+                <div class="order-status">Delivered Aug 23, 2023</div>
+                <div class="order-product-title">AmazonBasics Laptop Backpack</div>
+                <div class="order-actions">
+                    <button>Buy it again</button>
+                    <button>View your item</button>
+                </div>
+            </div>
+        </div>
+        <div class="order-card">
+            <img src="https://m.media-amazon.com/images/I/71K+0hZQqPL._AC_SY355_.jpg" alt="Product" class="order-image">
+            <div class="order-details">
+                <div class="order-info">Order placed: <b>July 8, 2023</b></div>
+                <div class="order-info">Order # 123-6677889-0011223</div>
+                <div class="order-info">Total: ₹349.00</div>
+                <div class="order-status">Delivered Jul 11, 2023</div>
+                <div class="order-product-title">Cello Butterflow Ball Pen, Blue, Pack of 10</div>
+                <div class="order-actions">
+                    <button>Buy it again</button>
+                    <button>View your item</button>
+                </div>
+            </div>
+        </div>
+        <div class="order-card">
+            <img src="https://m.media-amazon.com/images/I/81QpkIctqPL._AC_SY355_.jpg" alt="Product" class="order-image">
+            <div class="order-details">
+                <div class="order-info">Order placed: <b>June 15, 2023</b></div>
+                <div class="order-info">Order # 123-7788990-1122334</div>
+                <div class="order-info">Total: ₹3,499.00</div>
+                <div class="order-status">Delivered Jun 18, 2023</div>
+                <div class="order-product-title">Prestige Electric Kettle 1.5L</div>
+                <div class="order-actions">
+                    <button>Buy it again</button>
+                    <button>View your item</button>
+                </div>
+            </div>
+        </div>
+        <div class="order-card">
+            <img src="https://m.media-amazon.com/images/I/71pWzhdJNwL._AC_SY355_.jpg" alt="Product" class="order-image">
+            <div class="order-details">
+                <div class="order-info">Order placed: <b>May 2, 2023</b></div>
+                <div class="order-info">Order # 123-8899001-2233445</div>
+                <div class="order-info">Total: ₹799.00</div>
+                <div class="order-status">Delivered May 5, 2023</div>
+                <div class="order-product-title">Milton Thermosteel Flask 500ml</div>
+                <div class="order-actions">
+                    <button>Buy it again</button>
+                    <button>View your item</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

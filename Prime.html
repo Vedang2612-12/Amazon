@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Prime</title>
+    <link rel="stylesheet" href="Amzon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .prime-hero {
+            background: linear-gradient(90deg, #050505d0 60%, #032f68 100%);
+            color: #fff;
+            padding: 48px 0 32px 0;
+            text-align: center;
+        }
+        .prime-hero img {
+            width: 180px;
+            margin-bottom: 18px;
+        }
+        .prime-hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .prime-hero p {
+            font-size: 1.25rem;
+            margin-bottom: 18px;
+        }
+        .prime-cta-btn {
+            background: #ffd814;
+            color: #232f3e;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            padding: 14px 38px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        .prime-cta-btn:hover {
+            background: #f7ca00;
+        }
+        .prime-benefits {
+            max-width: 1100px;
+            margin: 40px auto 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+        .prime-benefit-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px #0001;
+            padding: 32px 28px 24px 28px;
+            flex: 1 1 280px;
+            min-width: 260px;
+            max-width: 340px;
+            text-align: center;
+        }
+        .prime-benefit-card i {
+            font-size: 2.5rem;
+            color: #00a8e1;
+            margin-bottom: 14px;
+        }
+        .prime-benefit-card h3 {
+            font-size: 1.2rem;
+            color: #232f3e;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .prime-benefit-card p {
+            color: #444;
+            font-size: 1rem;
+        }
+        .prime-video-section {
+            max-width: 1100px;
+            margin: 48px auto 0 auto;
+            background: #232f3e;
+            border-radius: 10px;
+            color: #fff;
+            padding: 32px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 32px;
+        }
+        .prime-video-section img {
+            width: 320px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px #0003;
+        }
+        .prime-video-content {
+            flex: 1 1 300px;
+        }
+        .prime-video-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: #ffd814;
+        }
+        .prime-video-content p {
+            font-size: 1.1rem;
+            color: #fff;
+        }
+        @media (max-width: 900px) {
+            .prime-benefits, .prime-video-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .prime-video-section img {
+                width: 90vw;
+                max-width: 340px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header>
+        <div class="navbar">
+            <div class="navbar-content">
+                <img src="amazon_logo.png" alt="Amazon Logo" class="logo" style="height:70px;width:110px;">
+                <div class="nav-location" style="display: flex; flex-direction: column; align-items: flex-start; margin-left: 12px; margin-right: 12px;">
+                    <div style="display: flex; align-items: center;">
+                        <span class="nav-location-icon" style="margin-right: 4px;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 22px; color: #fff;"></i>
+                        </span>
+                        <span class="nav-location-line1" style="font-size: 13px;">Deliver to</span>
+                    </div>
+                    <span class="nav-location-line2" style="font-size: 15px; font-weight: bold; margin-left: 26px; margin-top: -4px ">India</span>
+                </div>
+                <div class="search-bar">
+                    <select class="search-dropdown">
+                        <option value="all">All</option>
+                        <option value="books">Books</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                    </select>
+                    <input type="text" placeholder="Search Amazon" class="search-input" id="searchInput">
+
+                    <button class="search-button" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="language" style="margin-left:4px;">
+                    <select class="language-dropdown" id="languageDropdown" style="background:#0f1111fa; color:white;">
+                        <option value="en">🇺🇸 English - EN</option>
+                        <option value="hi">🇮🇳 हिंदी - HI</option>
+                        <option value="ta">🇮🇳 தமிழ் - TA</option>
+                        <option value="te">🇮🇳 తెలుగు - TE</option>
+                        <option value="kn">🇮🇳 ಕನ್ನಡ - KN</option>
+                        <option value="ml">🇮🇳 മലയാളം - ML</option>
+                        <option value="bn">🇮🇳 বাংলা - BN</option>
+                        <option value="gu">🇮🇳 ગુજરાતી - GU</option>
+                        <option value="fr">🇫🇷 Français - FR</option>
+                        <option value="de">🇩🇪 Deutsch - DE</option>
+                        <option value="es">🇪🇸 Español - ES</option>
+                        <option value="it">🇮🇹 Italiano - IT</option>
+                        <option value="jp">🇯🇵 日本語 - JP</option>
+                        <option value="cn">🇨🇳 中文 - CN</option>
+                        <option value="ru">🇷🇺 Русский - RU</option>
+                    </select>
+                </div>
+                <div class="account-section" style="margin-left:-12px;">
+                    <span class="hello-signin" style="margin-bottom:4px;">Hello, Sign in</span>
+                    <div style="display: flex; flex-direction: row; gap: 4px;">
+                        <button class="account-button" style="margin-top: -12px; display:block; margin-left: -12px;" onclick="window.location.href='Signin.html'">
+                            <b>Account & Lists</b> <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <button class="orders-button" onclick="window.location.href='Orders.html';" style="display: flex; align-items: center; background: transparent; color: white; border-radius: 3px; padding: 5px 10px; cursor: pointer; margin-top: -12px; margin-left: -12px;">
+                            <span>Returns</span>
+                            <span><b> & Orders</b></span>
+                        </button>
+                        <button class="cart-button" onclick="window.location.href='Cart.html'" style="display: flex; align-items: center; background: transparent; color: white; border-radius: 3px; padding: 5px 10px; cursor: pointer; margin-top: -12px">
+                            <i class="fa-solid fa-cart-shopping" style="margin-right: 6px; margin-top: -8px; height: 2px"></i>
+                            <b>Cart</b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="under-navbar">
+        <div class="under-navbar-content" style="display: flex; align-items: center; gap: 8px;">
+            <button class="under-navbar-btn" onclick="window.location.href='Amazon.html'">
+                <i class="fa-solid fa-bars"></i> <b>All</b>
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Today_Sales.html'">
+                Today's Deals
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Registery.html'">
+                Registry
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Prime.html'">
+                Prime Video
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Gift Cards.html'">
+                Gift Cards
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Custom Service.html'">
+                Customer Service
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Sell.html'">
+                Sell
+            </button>
+        </div>
+    </div>
+    <!-- Prime Hero Section -->
+    <section class="prime-hero">
+        <img src="7564181_amazon_prime_logo_brand_icon.png" alt="Amazon Prime Logo">
+        <h1>Welcome to Amazon Prime</h1>
+        <p>Enjoy unlimited fast delivery, exclusive deals, and award-winning entertainment with Prime.</p>
+        <button class="prime-cta-btn">Try Prime FREE for 30 days</button>
+        <div style="margin-top:18px;font-size:1.1rem;">
+            <i class="fa-solid fa-truck-fast"></i> Free & Fast Delivery &nbsp; | &nbsp;
+            <i class="fa-solid fa-film"></i> Prime Video &nbsp; | &nbsp;
+            <i class="fa-solid fa-music"></i> Prime Music &nbsp; | &nbsp;
+            <i class="fa-solid fa-percent"></i> Exclusive Deals
+        </div>
+    </section>
+    <!-- Prime Benefits Section -->
+    <section class="prime-benefits">
+        <div class="prime-benefit-card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Unlimited Free & Fast Delivery</h3>
+            <p>Get free one-day and two-day delivery on eligible items, with no minimum order value.</p>
+        </div>
+        <div class="prime-benefit-card">
+            <i class="fa-solid fa-film"></i>
+            <h3>Prime Video</h3>
+            <p>Watch thousands of popular movies, TV shows, and Amazon Originals, anytime, anywhere.</p>
+        </div>
+        <div class="prime-benefit-card">
+            <i class="fa-solid fa-music"></i>
+            <h3>Prime Music</h3>
+            <p>Stream over 70 million songs ad-free, listen offline, and enjoy expertly curated playlists.</p>
+        </div>
+        <div class="prime-benefit-card">
+            <i class="fa-solid fa-percent"></i>
+            <h3>Exclusive Deals & Early Access</h3>
+            <p>Get exclusive access to deals and sales, including Prime Day, before anyone else.</p>
+        </div>
+        <div class="prime-benefit-card">
+            <i class="fa-solid fa-book"></i>
+            <h3>Prime Reading</h3>
+            <p>Borrow eBooks, magazines, comics, and more from the Prime Reading catalog.</p>
+        </div>
+        <div class="prime-benefit-card">
+            <i class="fa-solid fa-cloud"></i>
+            <h3>Amazon Photos</h3>
+            <p>Store unlimited photos with Amazon Photos and keep your memories safe and secure.</p>
+        </div>
+    </section>
+    <!-- Prime Video Section -->
+    <section class="prime-video-section">
+        <img src="https://imgs.search.brave.com/Oj9Oq_Gdz22qMKaXA2ewPNtGEurDsorEXDF522WY-mI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vWWxYQTVj/MXBNSjRvS2JuTEpS/dEx4TEg1TUpkYXlw/UHQ5cldOdXJHalJ4/dy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlw/TG5CcC9ibWx0Wnk1/amIyMHZiM0pwL1oy/bHVZV3h6THprd0wy/TTIvTHpkbUx6a3dZ/elkzWmpJMy9Nemsy/WXpZeVpqRTJOek00/L09UaGlaRGRqTTJV/eFpqSXcvTG1wd1p3" alt="Prime Video">
+        <div class="prime-video-content">
+            <h2>Prime Video: Entertainment for Everyone</h2>
+            <p>
+                Enjoy the latest movies, TV shows, and award-winning Amazon Originals. Watch on your TV, laptop, tablet, or phone. Download and go, or stream instantly. With Prime Video, entertainment is always at your fingertips.
+            </p>
+            <button class="prime-cta-btn" style="margin-top:18px;">Explore Prime Video</button>
+        </div>
+    </section>
+</body>
+</html>

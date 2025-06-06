@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="Amzon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-content">
+                <img src="amazon_logo.png" alt="Amazon Logo" class="logo" style="height:70px;width:110px;" onclick="window.location.href='Amazon.html'">
+                <div class="nav-location" style="display: flex; flex-direction: column; align-items: flex-start; margin-left: 12px; margin-right: 12px;">
+                    <div style="display: flex; align-items: center;">
+                        <span class="nav-location-icon" style="margin-right: 4px;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 22px; color: #fff;"></i>
+                        </span>
+                        <span class="nav-location-line1" style="font-size: 13px;">Deliver to</span>
+                    </div>
+                    <span class="nav-location-line2" style="font-size: 15px; font-weight: bold; margin-left: 26px; margin-top: -4px ">India</span>
+                </div>
+                <div class="search-bar">
+                    <select class="search-dropdown">
+                        <option value="all">All</option>
+                        <option value="books">Books</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                    </select>
+                    <input type="text" placeholder="Search Amazon" class="search-input" id="searchInput">
+
+                    <button class="search-button" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="language" style="margin-left:4px;">
+                    <select class="language-dropdown" id="languageDropdown" style="background:#0f1111fa; color:white;">
+                        <option value="en">🇺🇸 English - EN</option>
+                        <option value="hi">🇮🇳 हिंदी - HI</option>
+                        <option value="ta">🇮🇳 தமிழ் - TA</option>
+                        <option value="te">🇮🇳 తెలుగు - TE</option>
+                        <option value="kn">🇮🇳 ಕನ್ನಡ - KN</option>
+                        <option value="ml">🇮🇳 മലയാളം - ML</option>
+                        <option value="bn">🇮🇳 বাংলা - BN</option>
+                        <option value="gu">🇮🇳 ગુજરાતી - GU</option>
+                        <option value="fr">🇫🇷 Français - FR</option>
+                        <option value="de">🇩🇪 Deutsch - DE</option>
+                        <option value="es">🇪🇸 Español - ES</option>
+                        <option value="it">🇮🇹 Italiano - IT</option>
+                        <option value="jp">🇯🇵 日本語 - JP</option>
+                        <option value="cn">🇨🇳 中文 - CN</option>
+                        <option value="ru">🇷🇺 Русский - RU</option>
+                    </select>
+                </div>
+                <div class="account-section" style="margin-left:4px; margin-left: -12px">
+                    <span class="hello-signin" style="margin-bottom:4px;">Hello, Sign in</span>
+                    <div style="display: flex; flex-direction: row; gap: 4px;">
+                        <button class="account-button" style="margin-top: -12px; display:block; margin-left: -12px;" onclick="window.location.href='Signin.html'">
+                            <b>Account & Lists</b> <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <button class="orders-button" onclick="window.location.href='Orders.html';" style="display: flex; align-items: center; background: transparent; color: white; border-radius: 3px; padding: 5px 10px; cursor: pointer; margin-top: -12px; margin-left: -12px;">
+                            <span>Returns</span>
+                            <span><b> & Orders</b></span>
+                        </button>
+                        <button class="cart-button" onclick="window.location.href='Cart.html'" style="display: flex; align-items: center; background: transparent; color: white; border-radius: 3px; padding: 5px 10px; cursor: pointer; margin-top: -12px">
+                            <i class="fa-solid fa-cart-shopping" style="margin-right: 6px; margin-top: -8px; height: 2px"></i>
+                            <b>Cart</b>
+                        </button>
+                    </div>
+                    </div> 
+                    
+            </div>
+        </div>
+    </header>
+    <div class="under-navbar">
+        <div class="under-navbar-content" style="display: flex; align-items: center; gap: 8px;">
+            <button class="under-navbar-btn" onclick="window.location.href='Amazon.html'">
+                <i class="fa-solid fa-bars"></i> <b>All</b>
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Today_Sales.html'">
+                Today's Deals
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Registery.html'">
+                Registry
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Prime.html'">
+                Prime Video
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Gift Cards.html'">
+                Gift Cards
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Custom Service.html'">
+                Customer Service
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Sell.html'">
+                Sell
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='file:C:/Users/user/.vscode/Gemini/Gemini.html'">
+                Our Virtual Assistant
+            </button>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="hero-msg">
+
+        </div>
+    </div>
+
+    <div class="shop-section">
+        <div class="box-1 box">
+            <div class="box-content">
+                <h2>Clothes</h2>
+            <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+            <p>See More</p>
+            </div>
+        </div>
+        <div class="box-2 box"><div class="box-content">
+                <h2>Health & Personal Care</h2>
+            <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+            <p>See More</p>
+            </div>
+        </div>
+        <div class="box-3 box"><div class="box-content">
+                <h2>Furniture</h2>
+            <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+            <p>See More</p>
+            </div>
+        </div>
+        <div class="box-4 box"><div class="box-content">
+                <h2>Electronics</h2>
+            <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+            <p>See More</p>
+            </div>
+        </div>
+         <div class="box-5 box">
+            <div class="box-content">
+                <h2>Beauty Picks</h2>
+            <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+            <p>See More</p>
+            </div>
+        </div>
+        <div class="box-6 box"><div class="box-content">
+                <h2>Pet Care</h2>
+            <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+            <p>See More</p>
+            </div>
+        </div>
+        <div class="box-7 box"><div class="box-content">
+                <h2>New Arrival in Toys</h2>
+            <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+            <p>See More</p>
+            </div>
+        </div>
+        <div class="box-8 box"><div class="box-content">
+                <h2>Discover Fashion Trends</h2>
+            <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+            <p>See More</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot-panel1">
+            <button class="Top" id="backToTopBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})" style="background: none; border: none; color: white; font-size: 1rem; cursor: pointer; font-size: 0.85rem">
+                Back To Top
+            </button>
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p><b>Get to Know Us</b></p>
+                <a>Careers</a>
+                <a>Blogs</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p><b>Make Money with Us</b></p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+                <a>›See More Make Money with Us</a>
+            </ul>
+            <ul>
+                <p><b>Amazon Payment Products</b></p>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p><b>Let Us Help You</b></p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+            </ul>
+        </div>
+    </footer>
+    <hr style="height: 1px;">
+    <script>
+        const translations = {
+            "hello": {
+                hi: "नमस्ते", ta: "வணக்கம்", te: "హలో", kn: "ಹಲೋ", ml: "ഹലോ", bn: "হ্যালো", gu: "હેલો",
+                hi: "नमस्ते", ta: "வணக்கம்", te: "హలో", kn: "ಹಲೋ", ml: "ഹലോ", bn: "হ্যালো", gu: "હેલો",
+                fr: "Bonjour", de: "Hallo", es: "Hola", it: "Ciao", jp: "こんにちは", cn: "你好", ru: "Привет"
+            },
+            "book": {
+                hi: "किताब", ta: "புத்தகம்", te: "పుస్తకం", kn: "ಪುಸ್ತಕ", ml: "പുസ്തകം", bn: "বই", gu: "પુસ્તક",
+                fr: "Livre", de: "Buch", es: "Libro", it: "Libro", jp: "本", cn: "书", ru: "Книга"
+            },
+            "mobile": {
+                hi: "मोबाइल", ta: "மொபைல்", te: "మొబైల్", kn: "ಮೊಬೈಲ್", ml: "മൊബൈൽ", bn: "মোবাইল", gu: "મોબાઇલ",
+                fr: "Mobile", de: "Handy", es: "Móvil", it: "Cellulare", jp: "携帯", cn: "手机", ru: "Мобильный"
+            },
+            "headphones": {
+                hi: "हेडफ़ोन", ta: "ஹெட்போன்கள்", te: "హెడ్‌ఫోన్లు", kn: "ಹೆಡ್‌ಫೋನ್‌ಗಳು", ml: "ഹെഡ്‌ഫോൺ", bn: "হেডফোন", gu: "હેડફોન",
+                fr: "Casque", de: "Kopfhörer", es: "Auriculares", it: "Cuffie", jp: "ヘッドホン", cn: "耳机", ru: "Наушники"
+            },
+            "money": {
+                hi: "पैसे", ta: "பணம்", te: "డబ్బు", kn: "ಹಣ", ml: "പണം", bn: "টাকা", gu: "પૈસા",
+                fr: "Argent", de: "Geld", es: "Dinero", it: "Soldi", jp: "お金", cn: "钱", ru: "Деньги"
+            },
+            "order": {
+                hi: "आदेश", ta: "ஆணை", te: "ఆర్డర్", kn: "ಆದೇಶ", ml: "ഓർഡർ", bn: "অর্ডার", gu: "ઓર્ડર",
+                fr: "Commande", de: "Bestellung", es: "Pedido", it: "Ordine", jp: "注文", cn: "订单", ru: "Заказ"
+            },
+            "cart": {
+                hi: "कार्ट", ta: "வண்டி", te: "కార్ట్", kn: "ಕಾರ್ಟ್", ml: "കാർട്ട്", bn: "কার্ট", gu: "કાર્ટ",
+                fr: "Panier", de: "Warenkorb", es: "Carrito", it: "Carrello", jp: "カート", cn: "购物车", ru: "Корзина"
+            },
+            "laptop": {
+                hi: "लैपटॉप", ta: "மடிக்கணினி", te: "ల్యాప్‌టాప్", kn: "ಲ್ಯಾಪ್‌ಟಾಪ್", ml: "ലാപ്‌ടോപ്പ്", bn: "ল্যাপটপ", gu: "લૅપટોપ",
+                fr: "Ordinateur portable", de: "Laptop", es: "Portátil", it: "Portatile", jp: "ノートパソコン", cn: "笔记本电脑", ru: "Ноутбук"
+            },
+            "camera": {
+                hi: "कैमरा", ta: "கேமரா", te: "కెమెరా", kn: "ಕ್ಯಾಮೆರಾ", ml: "ക്യാമറ", bn: "ক্যামেরা", gu: "કેમેરા",
+                fr: "Caméra", de: "Kamera", es: "Cámara", it: "Fotocamera", jp: "カメラ", cn: "相机", ru: "Камера"
+            },
+            "watch": {
+                hi: "घड़ी", ta: "கடிகாரம்", te: "గడియారం", kn: "ಘಡಿ", ml: "ഘടികാരം", bn: "ঘড়ি", gu: "ઘડિયાળ",
+                fr: "Montre", de: "Uhr", es: "Reloj", it: "Orologio", jp: "時計", cn: "手表", ru: "Часы"
+            },
+            "bag": {
+                hi: "बैग", ta: "பை", te: "బ్యాగ్", kn: "ಚೀಲ", ml: "ബാഗ്", bn: "ব্যাগ", gu: "બેગ",
+                fr: "Sac", de: "Tasche", es: "Bolsa", it: "Borsa", jp: "バッグ", cn: "包", ru: "Сумка"
+            },
+            "shoes": {
+                hi: "जूते", ta: "காலணிகள்", te: "జుట్టు", kn: "ಜೋತೆಗಳು", ml: "ചെരിപ്പുകൾ", bn: "জুতো", gu: "જૂતાં",
+                fr: "Chaussures", de: "Schuhe", es: "Zapatos", it: "Scarpe", jp: "靴", cn: "鞋", ru: "Обувь"
+            },
+            "dress": {
+                hi: "पोशाक", ta: "உடை", te: "దుస్తులు", kn: "ಉಡುಪು", ml: "ഉടുപ്പ്", bn: "পোশাক", gu: "પોશાક",
+                fr: "Robe", de: "Kleid", es: "Vestido", it: "Vestito", jp: "ドレス", cn: "连衣裙", ru: "Платье"
+            },
+            "computer": {
+                hi: "कंप्यूटर", ta: "கணினி", te: "కంప్యూటర్", kn: "ಕಂಪ್ಯೂಟರ್", ml: "കമ്പ്യൂട്ടർ", bn: "কম্পিউটার", gu: "કમ્પ્યુટર",
+                fr: "Ordinateur", de: "Computer", es: "Computadora", it: "Computer", jp: "コンピュータ", cn: "电脑", ru: "Компьютер"
+            },
+            "mouse": {
+                hi: "माउस", ta: "சுட்டி", te: "మౌస్", kn: "ಮೌಸ್", ml: "മൗസ്", bn: "মাউস", gu: "માઉસ",
+                fr: "Souris", de: "Maus", es: "Ratón", it: "Mouse", jp: "マウス", cn: "鼠标", ru: "Мышь"
+            },
+            "keyboard": {
+                hi: "कीबोर्ड", ta: "விசைப்பலகை", te: "కీబోర్డ్", kn: "ಕೀಬೋರ್ಡ್", ml: "കീബോർഡ്", bn: "কীবোর্ড", gu: "કીબોર્ડ",
+                fr: "Clavier", de: "Tastatur", es: "Teclado", it: "Tastiera", jp: "キーボード", cn: "键盘", ru: "Клавиатура"
+            },
+            "charger": {
+                hi: "चार्जर", ta: "சார்ஜர்", te: "చార్జర్", kn: "ಚಾರ್ಜರ್", ml: "ചാർജർ", bn: "চার্জার", gu: "ચાર્જર",
+                fr: "Chargeur", de: "Ladegerät", es: "Cargador", it: "Caricabatterie", jp: "充電器", cn: "充电器", ru: "Зарядное"
+            },
+            "tablet": {
+                hi: "टैबलेट", ta: "கணினி தட்டு", te: "టాబ్లెట్", kn: "ಟ್ಯಾಬ್ಲೆಟ್", ml: "ടാബ്ലറ്റ്", bn: "ট্যাবলেট", gu: "ટેબલેટ",
+                fr: "Tablette", de: "Tablet", es: "Tableta", it: "Tablet", jp: "タブレット", cn: "平板电脑", ru: "Планшет"
+            },
+            "television": {
+                hi: "टेलीविजन", ta: "தொலைக்காட்சி", te: "టెలివిజన్", kn: "ದೂರದರ್ಶನ", ml: "ടെലിവിഷൻ", bn: "টেলিভিশন", gu: "ટેલિવિઝન",
+                fr: "Télévision", de: "Fernseher", es: "Televisión", it: "Televisione", jp: "テレビ", cn: "电视", ru: "Телевизор"
+            },
+            "fan": {
+                hi: "पंखा", ta: "விசிறி", te: "పంకా", kn: "ಪಂಖಾ", ml: "ഫാൻ", bn: "ফ্যান", gu: "પંખો",
+                fr: "Ventilateur", de: "Ventilator", es: "Ventilador", it: "Ventilatore", jp: "扇風機", cn: "风扇", ru: "Вентилятор"
+            },
+            "light": {
+                hi: "लाइट", ta: "ஒளி", te: "లైట్", kn: "ಲೈಟ್", ml: "ലൈറ്റ്", bn: "লাইট", gu: "લાઇટ",
+                fr: "Lumière", de: "Licht", es: "Luz", it: "Luce", jp: "ライト", cn: "灯", ru: "Свет"
+            },
+            "phone": {
+                hi: "फ़ोन", ta: "தொலைபேசி", te: "ఫోన్", kn: "ಫೋನ್", ml: "ഫോൺ", bn: "ফোন", gu: "ફોન",
+                fr: "Téléphone", de: "Telefon", es: "Teléfono", it: "Telefono", jp: "電話", cn: "电话", ru: "Телефон"
+            },
+            "pen": {
+                hi: "कलम", ta: "பேனா", te: "పెన్", kn: "ಪೆನ್", ml: "പെൻ", bn: "কলম", gu: "પેન",
+                fr: "Stylo", de: "Stift", es: "Bolígrafo", it: "Penna", jp: "ペン", cn: "钢笔", ru: "Ручка"
+            },
+            "table": {
+                hi: "मेज़", ta: "மேசை", te: "పట్టిక", kn: "ಮೇಜು", ml: "മേശ", bn: "টেবিল", gu: "મેજ",
+                fr: "Table", de: "Tisch", es: "Mesa", it: "Tavolo", jp: "テーブル", cn: "桌子", ru: "Стол"
+            },
+            "chair": {
+                hi: "कुर्सी", ta: "நாற்காலி", te: "కుర్చీ", kn: "ಕುರ್ಚಿ", ml: "കസേര", bn: "চেয়ার", gu: "ખુરશી",
+                fr: "Chaise", de: "Stuhl", es: "Silla", it: "Sedia", jp: "椅子", cn: "椅子", ru: "Стул"
+            },
+            "bottle": {
+                hi: "बोतल", ta: "குடுவை", te: "బాటిల్", kn: "ಬಾಟಲ್", ml: "ബോട്ടിൽ", bn: "বোতল", gu: "બોટલ",
+                fr: "Bouteille", de: "Flasche", es: "Botella", it: "Bottiglia", jp: "ボトル", cn: "瓶子", ru: "Бутылка"
+            },
+            "water": {
+                hi: "पानी", ta: "தண்ணீர்", te: "నీరు", kn: "ನೀರು", ml: "വെള്ളം", bn: "পানি", gu: "પાણી",
+                fr: "Eau", de: "Wasser", es: "Agua", it: "Acqua", jp: "水", cn: "水", ru: "Вода"
+            },
+            "bagpack": {
+                hi: "बैगपैक", ta: "பேக்பேக்", te: "బ్యాక్‌ప్యాక్", kn: "ಬ್ಯಾಕ್‌ಪ್ಯಾಕ್", ml: "ബാക്ക്പാക്ക്", bn: "ব্যাকপ্যাক", gu: "બેકપેક",
+                fr: "Sac à dos", de: "Rucksack", es: "Mochila", it: "Zaino", jp: "バックパック", cn: "背包", ru: "Рюкзак"
+            },
+            "mirror": {
+                hi: "आईना", ta: "கண்ணாடி", te: "కన్నాడి", kn: "ಕನ್ನಡಿ", ml: "കണ്ണാടി", bn: "আয়না", gu: "અયના",
+                fr: "Miroir", de: "Spiegel", es: "Espejo", it: "Specchio", jp: "鏡", cn: "镜子", ru: "Зеркало"
+            },
+            "clock": {
+                hi: "घड़ी", ta: "மணிக்கடிகாரம்", te: "గడియారం", kn: "ಗಡಿಯಾರ", ml: "ഘടികാരം", bn: "ঘড়ি", gu: "ઘડિયાળ",
+                fr: "Horloge", de: "Uhr", es: "Reloj", it: "Orologio", jp: "時計", cn: "时钟", ru: "Часы"
+            },
+            "soap": {
+                hi: "साबुन", ta: "சோப்பு", te: "సబ్బు", kn: "ಸಾಬೂನು", ml: "സാബൂൺ", bn: "সাবান", gu: "સાબુ",
+                fr: "Savon", de: "Seife", es: "Jabón", it: "Sapone", jp: "石鹸", cn: "肥皂", ru: "Мыло"
+            },
+            "milk": {
+                hi: "दूध", ta: "பால்", te: "పాలు", kn: "ಹಾಲು", ml: "പാൽ", bn: "দুধ", gu: "દૂધ",
+                fr: "Lait", de: "Milch", es: "Leche", it: "Latte", jp: "牛乳", cn: "牛奶", ru: "Молоко"
+            },
+            "egg": {
+                hi: "अंडा", ta: "முட்டை", te: "గుడ్డు", kn: "ಮೂತು", ml: "മുട്ട", bn: "ডিম", gu: "અંડા",
+                fr: "Oeuf", de: "Ei", es: "Huevo", it: "Uovo", jp: "卵", cn: "鸡蛋", ru: "Яйцо"
+            },
+            "bread": {
+                hi: "ब्रेड", ta: "ரொட்டி", te: "బ్రెడ్", kn: "ಬ್ರೆಡ್", ml: "ബ്രെഡ്", bn: "পাউরুটি", gu: "બ્રેડ",
+                fr: "Pain", de: "Brot", es: "Pan", it: "Pane", jp: "パン", cn: "面包", ru: "Хлеб"
+            },
+            "butter": {
+                hi: "मक्खन", ta: "வெண்ணெய்", te: "వెన్న", kn: "ಬೆಣ್ಣೆ", ml: "വെണ്ണ", bn: "মাখন", gu: "માખણ",
+                fr: "Beurre", de: "Butter", es: "Mantequilla", it: "Burro", jp: "バター", cn: "黄油", ru: "Масло"
+            },
+            "rice": {
+                hi: "चावल", ta: "அரிசி", te: "బియ్యం", kn: "ಅಕ್ಕಿ", ml: "അരി", bn: "চাল", gu: "ચોખા",
+                fr: "Riz", de: "Reis", es: "Arroz", it: "Riso", jp: "米", cn: "米饭", ru: "Рис"
+            },
+            "sugar": {
+                hi: "चीनी", ta: "சர்க்கரை", te: "చక్కెర", kn: "ಸಕ್ಕರೆ", ml: "പഞ്ചസാര", bn: "চিনি", gu: "ખાંડ",
+                fr: "Sucre", de: "Zucker", es: "Azúcar", it: "Zucchero", jp: "砂糖", cn: "糖", ru: "Сахар"
+            },
+            "salt": {
+                hi: "नमक", ta: "உப்பு", te: "ఉప్పు", kn: "ಉಪ್ಪು", ml: "ഉപ്പ്", bn: "লবণ", gu: "મીઠું",
+                fr: "Sel", de: "Salz", es: "Sal", it: "Sale", jp: "塩", cn: "盐", ru: "Соль"
+            },
+            "oil": {
+                hi: "तेल", ta: "எண்ணெய்", te: "నూనె", kn: "ಎಣ್ಣೆ", ml: "എണ്ണ", bn: "তেল", gu: "તેલ",
+                fr: "Huile", de: "Öl", es: "Aceite", it: "Olio", jp: "油", cn: "油", ru: "Масло"
+            },
+            "tea": {
+                hi: "चाय", ta: "தேநீர்", te: "టీ", kn: "ಚಹಾ", ml: "ചായ", bn: "চা", gu: "ચા",
+                fr: "Thé", de: "Tee", es: "Té", it: "Tè", jp: "お茶", cn: "茶", ru: "Чай"
+            },
+            "coffee": {
+                hi: "कॉफी", ta: "காபி", te: "కాఫీ", kn: "ಕಾಫಿ", ml: "കാപ്പി", bn: "কফি", gu: "કોફી",
+                fr: "Café", de: "Kaffee", es: "Café", it: "Caffè", jp: "コーヒー", cn: "咖啡", ru: "Кофе"
+            }
+        };
+
+        const searchInput = document.getElementById('searchInput');
+        const languageDropdown = document.getElementById('languageDropdown');
+        const searchButton = document.getElementById('searchButton');
+
+        function getTranslatedQuery(query, lang) {
+            let words = query.split(' ');
+            let translatedWords = words.map(word => {
+                let lower = word.toLowerCase();
+                if (translations[lower] && translations[lower][lang]) {
+                    return translations[lower][lang];
+                }
+                return word;
+            });
+            return translatedWords.join(' ');
+        }
+
+        searchButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = languageDropdown.value;
+            const query = searchInput.value;
+            const translatedQuery = getTranslatedQuery(query, lang);
+            const event = new Event('input');
+            searchInput.dispatchEvent(event);
+        });
+
+        searchInput.addEventListener('input', function() {
+            const lang = languageDropdown.value;
+            let words = searchInput.value.split(' ');
+            let translatedWords = words.map(word => {
+                let lower = word.toLowerCase();
+                if (translations[lower] && translations[lower][lang]) {
+                    return translations[lower][lang];
+                }
+                return word;
+            });
+            const translated = translatedWords.join(' ');
+            if (translated !== searchInput.value) {
+                searchInput.value = translated;
+            }
+        });
+    </script>
+</body>
+</html>

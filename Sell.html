@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sell on Amazon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Amzon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: #f3f3f3;
+            font-family: Arial, sans-serif;
+        }
+        .sell-main {
+            max-width: 1100px;
+            margin: 40px auto 0 auto;
+            padding: 32px 16px;
+        }
+        .sell-title {
+            color: #232f3e;
+            font-size: 2.2rem;
+            margin-bottom: 18px;
+            font-weight: bold;
+        }
+        .sell-banner {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 10px;
+            margin-bottom: 32px;
+            box-shadow: 0 2px 12px #0001;
+            display: block;
+        }
+        .sell-section-title {
+            font-size: 1.3rem;
+            color: #232f3e;
+            margin-bottom: 16px;
+            font-weight: bold;
+        }
+        .sell-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            margin-bottom: 32px;
+        }
+        .sell-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #0001;
+            padding: 22px 18px 18px 18px;
+            flex: 1 1 260px;
+            min-width: 240px;
+            max-width: 320px;
+            text-align: center;
+            position: relative;
+            transition: box-shadow 0.2s;
+        }
+        .sell-card:hover {
+            box-shadow: 0 4px 18px #0002;
+        }
+        .sell-card i {
+            font-size: 2.2rem;
+            color: #00a8e1;
+            margin-bottom: 10px;
+        }
+        .sell-card .sell-card-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #232f3e;
+            margin-bottom: 8px;
+        }
+        .sell-card .sell-card-desc {
+            color: #444;
+            font-size: 0.98rem;
+            margin-bottom: 10px;
+        }
+        .sell-card a {
+            color: #007185;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.98rem;
+        }
+        .sell-contact {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #0001;
+            padding: 20px 24px;
+            margin-top: 24px;
+            color: #232f3e;
+            font-size: 1.05rem;
+        }
+        .sell-contact h3 {
+            margin-top: 0;
+            color: #B12704;
+        }
+        @media (max-width: 900px) {
+            .sell-cards {
+                flex-direction: column;
+                gap: 18px;
+            }
+            .sell-main {
+                padding: 18px 4vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (copied from Amazon.html) -->
+    <header>
+        <div class="navbar">
+            <div class="navbar-content">
+                <img src="amazon_logo.png" alt="Amazon Logo" class="logo" style="height:70px;width:110px;">
+                <div class="nav-location" style="display: flex; flex-direction: column; align-items: flex-start; margin-left: 12px; margin-right: 12px;">
+                    <div style="display: flex; align-items: center;">
+                        <span class="nav-location-icon" style="margin-right: 4px;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 22px; color: #fff;"></i>
+                        </span>
+                        <span class="nav-location-line1" style="font-size: 13px;">Deliver to</span>
+                    </div>
+                    <span class="nav-location-line2" style="font-size: 15px; font-weight: bold; margin-left: 26px; margin-top: -4px ">India</span>
+                </div>
+                <div class="search-bar">
+                    <select class="search-dropdown">
+                        <option value="all">All</option>
+                        <option value="books">Books</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                    </select>
+                    <input type="text" placeholder="Search Amazon" class="search-input" id="searchInput">
+                    <button class="search-button" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="language" style="margin-left:4px;">
+                    <select class="language-dropdown" id="languageDropdown" style="background:#0f1111fa; color:white;">
+                        <option value="en">🇺🇸 English - EN</option>
+                        <option value="hi">🇮🇳 हिंदी - HI</option>
+                        <option value="ta">🇮🇳 தமிழ் - TA</option>
+                        <option value="te">🇮🇳 తెలుగు - TE</option>
+                        <option value="kn">🇮🇳 ಕನ್ನಡ - KN</option>
+                        <option value="ml">🇮🇳 മലയാളം - ML</option>
+                        <option value="bn">🇮🇳 বাংলা - BN</option>
+                        <option value="gu">🇮🇳 ગુજરાતી - GU</option>
+                        <option value="fr">🇫🇷 Français - FR</option>
+                        <option value="de">🇩🇪 Deutsch - DE</option>
+                        <option value="es">🇪🇸 Español - ES</option>
+                        <option value="it">🇮🇹 Italiano - IT</option>
+                        <option value="jp">🇯🇵 日本語 - JP</option>
+                        <option value="cn">🇨🇳 中文 - CN</option>
+                        <option value="ru">🇷🇺 Русский - RU</option>
+                    </select>
+                </div>
+                <div class="account-section" style="margin-left:-12px;">
+                    <span class="hello-signin" style="margin-bottom:4px;">Hello, Sign in</span>
+                    <div style="display: flex; flex-direction: row; gap: 4px;">
+                        <button class="account-button" style="margin-top: -12px; display:block; margin-left: -12px;" onclick="window.location.href='Signin.html'">
+                            <b>Account & Lists</b> <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <button class="orders-button" onclick="window.location.href='Orders.html';" style="display: flex; align-items: center; margin-left: -12px; background: transparent; color: white; border-radius: 3px; padding: 5px 10px; cursor: pointer; margin-top: -12px;">
+                            <span>Returns</span>
+                            <span><b> & Orders</b></span>
+                        </button>
+                        <button class="cart-button" onclick="window.location.href='Cart.html'" style="display: flex; align-items: center; background: transparent; color: white; border-radius: 3px; padding: 5px 10px; cursor: pointer; margin-top: -12px">
+                            <i class="fa-solid fa-cart-shopping" style="margin-right: 6px; margin-top: -8px; height: 2px"></i>
+                            <b>Cart</b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="under-navbar">
+        <div class="under-navbar-content" style="display: flex; align-items: center; gap: 8px;">
+            <button class="under-navbar-btn" onclick="window.location.href='Amazon.html'">
+                <i class="fa-solid fa-bars"></i> <b>All</b>
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Today_Sales.html'">
+                Today's Deals
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Registery.html'">
+                Registry
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Prime.html'">
+                Prime Video
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Gift Cards.html'">
+                Gift Cards
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Custom Service.html'">
+                Customer Service
+            </button>
+            <button class="under-navbar-btn" onclick="window.location.href='Sell.html'">
+                Sell
+            </button>
+        </div>
+    </div>
+    <!-- Main Sell Content -->
+    <div class="sell-main">
+        <div class="sell-title">
+            <i class="fa-solid fa-store"></i> Sell on Amazon
+        </div>
+        <img class="sell-banner" src="https://imgs.search.brave.com/zhtZ6uLK5i8Lr3t3h_kWWbug4p1vGC-MtQVlgD6YLiE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vRmVsRmNJ/U2ZKc0NXM05saU0y/QjkyYmVVWXhzcEtf/b1FDd1R2MHZ5YW5j/Zy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlw/YldjdS9abkpsWlhC/cGF5NWpiMjB2L1pu/SmxaUzF3YzJRdmMz/VnQvYldWeUxYTmhi/R1V0WW1GdS9ibVZ5/TFhSbGJYQnNZWFJs/L1h6SXpMVEl4TkRn/Mk1qSTMvTVRrdWFu/Qm5QM05sYlhROS9Z/V2x6WDJoNVluSnBa/Q1ozL1BUYzBNQQ" alt="Sell on Amazon Banner">
+        <div class="sell-section-title">Start Selling on Amazon in 3 Easy Steps</div>
+        <div class="sell-cards">
+            <div class="sell-card">
+                <i class="fa-solid fa-user-plus"></i>
+                <div class="sell-card-title">1. Register your account</div>
+                <div class="sell-card-desc">Sign up as an Amazon seller and provide your business details.</div>
+                <a href="#">Register Now</a>
+            </div>
+            <div class="sell-card">
+                <i class="fa-solid fa-box-open"></i>
+                <div class="sell-card-title">2. List your products</div>
+                <div class="sell-card-desc">Add your products to Amazon's catalog and set your prices.</div>
+                <a href="#">List Products</a>
+            </div>
+            <div class="sell-card">
+                <i class="fa-solid fa-truck"></i>
+                <div class="sell-card-title">3. Start selling & shipping</div>
+                <div class="sell-card-desc">Sell to millions of customers and ship with Amazon or yourself.</div>
+                <a href="#">Learn Shipping</a>
+            </div>
+        </div>
+        <div class="sell-section-title">Why Sell on Amazon?</div>
+        <div class="sell-cards">
+            <div class="sell-card">
+                <i class="fa-solid fa-users"></i>
+                <div class="sell-card-title">Reach Millions</div>
+                <div class="sell-card-desc">Access a huge customer base and grow your business online.</div>
+            </div>
+            <div class="sell-card">
+                <i class="fa-solid fa-bolt"></i>
+                <div class="sell-card-title">Fast Payments</div>
+                <div class="sell-card-desc">Get paid quickly and securely for your sales.</div>
+            </div>
+            <div class="sell-card">
+                <i class="fa-solid fa-headset"></i>
+                <div class="sell-card-title">Seller Support</div>
+                <div class="sell-card-desc">24/7 support to help you at every step of your selling journey.</div>
+            </div>
+            <div class="sell-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <div class="sell-card-title">Business Growth Tools</div>
+                <div class="sell-card-desc">Use analytics, ads, and promotions to boost your sales.</div>
+            </div>
+        </div>
+        <div class="sell-section-title">Need Help?</div>
+        <div class="sell-contact">
+            <h3><i class="fa-solid fa-phone"></i> Seller Support</h3>
+            <p>
+                Our Seller Support team is available 24/7.<br>
+                <b>Call:</b> 1800-419-7355<br>
+                <b>Email:</b> <a href="mailto:seller-support@amazon.com">seller-support@amazon.com</a><br>
+                <b>Help Center:</b> <a href="#">Visit Seller Help</a>
+            </p>
+        </div>
+    </div>
+    <script>
+        // (Optional) Add the same translation/search script as in Amazon.html if needed
+    </script>
+</body>
+</html>

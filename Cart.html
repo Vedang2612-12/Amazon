@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Amazon</title>
+    <link rel="stylesheet" href="Amzon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        
+        body {
+            background-color: #eaeded;
+        }
+        .cart-container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 30px 30px 10px 30px;
+        }
+        .cart-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #111;
+        }
+        .cart-item {
+            display: flex;
+            gap: 20px;
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+            align-items: center;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .cart-image {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            border: 1px solid #eee;
+            background: #fff;
+            border-radius: 4px;
+        }
+        .cart-details {
+            flex: 1;
+        }
+        .cart-product-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #222;
+            margin-bottom: 6px;
+        }
+        .cart-price {
+            color: #B12704;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .cart-qty {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .cart-remove {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 5px 12px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .cart-remove:hover {
+            background: #f3f3f3;
+        }
+        .cart-summary {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .cart-checkout {
+            display: block;
+            margin-left: auto;
+            margin-top: 20px;
+            background: #ffd814;
+            border: 1px solid #fcd200;
+            border-radius: 3px;
+            padding: 12px 32px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .cart-checkout:hover {
+            background: #f7ca00;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <div class="cart-title"><i class="fa-solid fa-cart-shopping"></i> Your Shopping Cart</div>
+        <div class="cart-item">
+            <img src="https://m.media-amazon.com/images/I/71KilybDOoL._AC_SY355_.jpg" alt="Echo Dot" class="cart-image">
+            <div class="cart-details">
+                <div class="cart-product-title">Echo Dot (4th Gen, Blue) with Alexa</div>
+                <div class="cart-price">₹1,499.00</div>
+                <div class="cart-qty">Quantity: 1</div>
+                <button class="cart-remove">Remove</button>
+            </div>
+        </div>
+        <div class="cart-item">
+            <img src="https://m.media-amazon.com/images/I/81drfTT9ZfL._AC_SY355_.jpg" alt="Book" class="cart-image">
+            <div class="cart-details">
+                <div class="cart-product-title">The Psychology of Money</div>
+                <div class="cart-price">₹599.00</div>
+                <div class="cart-qty">Quantity: 2</div>
+                <button class="cart-remove">Remove</button>
+            </div>
+        </div>
+        <div class="cart-summary">
+            Subtotal (3 items): <span style="color:#B12704;">₹2,697.00</span>
+        </div>
+        <button class="cart-checkout">Proceed to Buy</button>
+    </div>
+</body>
+</html>
